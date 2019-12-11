@@ -15,6 +15,6 @@ $ sudo apt-get install jq
 $cat capterra.json | jq ‘.github’
 $cat softwareadvice.json| jq
 # Create Test cases  while reading file
-# Case1: File Not Found
-# Case2: File is empty
-#Execute  TestCases
+Case1: File Not Found
+Case2: File is empty
+# Execute  TestCases

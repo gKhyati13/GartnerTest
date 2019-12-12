@@ -45,3 +45,12 @@ ON
    #5.
    INSERT INTO `clicks` VALUES (33,3,4.00,'USD','2019-12-12 16:18:43');
    SELECT Max(id) FROM clicks
+6.
+SELECT
+ls.name
+FROM
+Listings ls
+WHERE ls.id
+NOT IN( SELECT id FROM
+clicks cl
+WHERE YEAR(cl.created)='2013')
